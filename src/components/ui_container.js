@@ -8,12 +8,9 @@ class UIContainer extends Component {
     return (
       <div>
         <MenuExampleMenus />
-        <SidebarLeftPush>
-          {this.props.children}
-        </SidebarLeftPush>
+        <SidebarLeftPush>{this.props.children}</SidebarLeftPush>
       </div>
-
-    )
+    );
   }
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Button, Input } from 'semantic-ui-react';
 
-export default class ArticleCreationInput extends React.Component{
+export default class ArticleCreationInput extends React.Component {
   constructor(props) {
     super(props);
     this.extractValue = this.extractValue.bind(this);
@@ -13,7 +13,7 @@ export default class ArticleCreationInput extends React.Component{
   }
 
   render() {
-    return(
+    return (
       <div>
         <form onSubmit={this.props.onSubmit}>
           <label>
@@ -27,11 +27,11 @@ export default class ArticleCreationInput extends React.Component{
           </label>
           <br />
           <br />
-          <Button primary type="submit" value="Submit">Submit</Button>
+          <Button primary type="submit" value="Submit">
+            Submit
+          </Button>
         </form>
       </div>
-
     );
   }
-
 }

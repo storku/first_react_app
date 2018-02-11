@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, TextArea, Button } from 'semantic-ui-react';
 
-class InputBox extends React.Component{
+class InputBox extends React.Component {
   constructor(props) {
     super(props);
     this.extractValue = this.extractValue.bind(this);
@@ -13,7 +13,7 @@ class InputBox extends React.Component{
   }
 
   render() {
-    return(
+    return (
       <div>
         <form onSubmit={this.props.onSubmit}>
           <label>
@@ -28,13 +28,13 @@ class InputBox extends React.Component{
             />
           </label>
           <br />
-          <Button primary type="submit" value="Submit">Submit</Button>
+          <Button primary type="submit" value="Submit">
+            Submit
+          </Button>
         </form>
       </div>
-
     );
   }
-
 }
 
 export default InputBox;
