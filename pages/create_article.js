@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Router } from '../routes';
-import ArticleCreationInput from '../src/components/article_creation_input';
-import UIContainer from '../src/components/ui_container';
+import ArticleCreationInput from '../src/components/Article_creation_input';
+import UIContainer from '../src/components/UI_container';
 
 //create test links
 const PostLink = props => (

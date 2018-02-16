@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UIContainer from '../src/components/ui_container';
+import UIContainer from '../src/components/UI_container';
 
 class Post extends Component {
   constructor(props) {

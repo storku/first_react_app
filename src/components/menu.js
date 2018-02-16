@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react';
 import { Link, Router } from '../../routes';
-import SearchExampleStandard from './search_bar';
+import SearchExampleStandard from './Search_bar';
 
 //menu is imported into the ui_container.js file
 export default class MenuExampleMenus extends Component {

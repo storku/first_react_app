@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -81,8 +81,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__routes__ = __webpack_require__("./routes.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__routes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_components_article_creation_input__ = __webpack_require__("./src/components/article_creation_input.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_components_ui_container__ = __webpack_require__("./src/components/ui_container.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_components_Article_creation_input__ = __webpack_require__("./src/components/Article_creation_input.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_components_UI_container__ = __webpack_require__("./src/components/UI_container.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/pages/create_article.js';
@@ -188,14 +188,14 @@ var CreateArticle = function (_Component) {
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_3__src_components_ui_container__["a" /* default */],
+          __WEBPACK_IMPORTED_MODULE_3__src_components_UI_container__["a" /* default */],
           {
             __source: {
               fileName: _jsxFileName,
               lineNumber: 56
             }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__src_components_article_creation_input__["a" /* default */], {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__src_components_Article_creation_input__["a" /* default */], {
             value: this.state.value,
             submittedText: this.state.submittedText,
             onChange: this.handleChange,
@@ -260,7 +260,7 @@ module.exports = routes;
 
 /***/ }),
 
-/***/ "./src/components/article_creation_input.js":
+/***/ "./src/components/Article_creation_input.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -268,7 +268,7 @@ module.exports = routes;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__);
-var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/src/components/article_creation_input.js';
+var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/src/components/Article_creation_input.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -375,7 +375,7 @@ var ArticleCreationInput = function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/components/menu.js":
+/***/ "./src/components/Menu.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -385,8 +385,8 @@ var ArticleCreationInput = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__("./routes.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__routes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__search_bar__ = __webpack_require__("./src/components/search_bar.js");
-var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/src/components/menu.js';
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Search_bar__ = __webpack_require__("./src/components/Search_bar.js");
+var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/src/components/Menu.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -455,7 +455,11 @@ var MenuExampleMenus = function (_Component) {
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"].Item,
-            { name: 'signup', active: activeItem === 'signup', onClick: this.handleItemClick, __source: {
+            {
+              name: 'signup',
+              active: activeItem === 'signup',
+              onClick: this.handleItemClick,
+              __source: {
                 fileName: _jsxFileName,
                 lineNumber: 21
               }
@@ -467,44 +471,52 @@ var MenuExampleMenus = function (_Component) {
           __WEBPACK_IMPORTED_MODULE_2__routes__["Link"],
           { href: '/login', __source: {
               fileName: _jsxFileName,
-              lineNumber: 26
+              lineNumber: 30
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"].Item,
-            { name: 'login', active: activeItem === 'login', onClick: this.handleItemClick, __source: {
+            {
+              name: 'login',
+              active: activeItem === 'login',
+              onClick: this.handleItemClick,
+              __source: {
                 fileName: _jsxFileName,
-                lineNumber: 27
+                lineNumber: 31
               }
             },
             'Login'
           )
         ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__search_bar__["a" /* default */], {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Search_bar__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 32
+            lineNumber: 40
           }
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"].Menu,
           { position: 'right', __source: {
               fileName: _jsxFileName,
-              lineNumber: 34
+              lineNumber: 42
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_2__routes__["Link"],
             { href: '/create_article', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 35
+                lineNumber: 43
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"].Item,
-              { name: 'createArticle', active: activeItem === 'createArticle', onClick: this.handleItemClick, __source: {
+              {
+                name: 'createArticle',
+                active: activeItem === 'createArticle',
+                onClick: this.handleItemClick,
+                __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 36
+                  lineNumber: 44
                 }
               },
               'Create Article'
@@ -514,14 +526,18 @@ var MenuExampleMenus = function (_Component) {
             __WEBPACK_IMPORTED_MODULE_2__routes__["Link"],
             { href: '/', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 41
+                lineNumber: 53
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"].Item,
-              { name: '/mainPage', active: activeItem === 'mainPage', onClick: this.handleItemClick, __source: {
+              {
+                name: '/mainPage',
+                active: activeItem === 'mainPage',
+                onClick: this.handleItemClick,
+                __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 42
+                  lineNumber: 54
                 }
               },
               'Main Page'
@@ -539,7 +555,7 @@ var MenuExampleMenus = function (_Component) {
 
 /***/ }),
 
-/***/ "./src/components/search_bar.js":
+/***/ "./src/components/Search_bar.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -553,7 +569,7 @@ var MenuExampleMenus = function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/src/components/search_bar.js';
+var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/src/components/Search_bar.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -636,14 +652,14 @@ var SearchExampleStandard = function (_Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 42
+            lineNumber: 44
           }
         },
         __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["Grid"].Column,
           { width: 8, __source: {
               fileName: _jsxFileName,
-              lineNumber: 43
+              lineNumber: 45
             }
           },
           __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["Search"], _extends({
@@ -655,13 +671,13 @@ var SearchExampleStandard = function (_Component) {
           }, this.props, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 44
+              lineNumber: 46
             }
           }))
         ),
         __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["Grid"].Column, { width: 8, __source: {
             fileName: _jsxFileName,
-            lineNumber: 53
+            lineNumber: 55
           }
         })
       );
@@ -675,7 +691,7 @@ var SearchExampleStandard = function (_Component) {
 
 /***/ }),
 
-/***/ "./src/components/sidebarleftpush.js":
+/***/ "./src/components/Sidebarleftpush.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -683,7 +699,7 @@ var SearchExampleStandard = function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__);
-var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/src/components/sidebarleftpush.js';
+var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/src/components/Sidebarleftpush.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -876,15 +892,15 @@ var SidebarLeftSlideAlong = function (_Component) {
 
 /***/ }),
 
-/***/ "./src/components/ui_container.js":
+/***/ "./src/components/UI_container.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__menu__ = __webpack_require__("./src/components/menu.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebarleftpush__ = __webpack_require__("./src/components/sidebarleftpush.js");
-var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/src/components/ui_container.js';
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Menu__ = __webpack_require__("./src/components/Menu.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Sidebarleftpush__ = __webpack_require__("./src/components/Sidebarleftpush.js");
+var _jsxFileName = '/Users/chenyu/Documents/practice_apps/first_react_app/src/components/UI_container.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -920,14 +936,14 @@ var UIContainer = function (_Component) {
             lineNumber: 9
           }
         },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__menu__["a" /* default */], {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Menu__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 10
           }
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_2__sidebarleftpush__["a" /* default */],
+          __WEBPACK_IMPORTED_MODULE_2__Sidebarleftpush__["a" /* default */],
           {
             __source: {
               fileName: _jsxFileName,
@@ -947,7 +963,7 @@ var UIContainer = function (_Component) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/create_article.js");

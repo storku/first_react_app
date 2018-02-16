@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MenuExampleMenus from './menu';
-import SidebarLeftPush from './sidebarleftpush';
+import MenuExampleMenus from './Menu';
+import SidebarLeftPush from './Sidebarleftpush';
 
 //currently contains sidebarleftpush.js, menu.js
 class UIContainer extends Component {

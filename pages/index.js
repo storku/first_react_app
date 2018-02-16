@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Grid } from 'semantic-ui-react';
 import { Link, Router } from '../routes';
-import InputBox from '../src/components/inputbox';
-import ContainerExampleContainer from '../src/components/text_container';
-import UIContainer from '../src/components/ui_container';
+import InputBox from '../src/components/Inputbox';
+import ContainerExampleContainer from '../src/components/Text_container';
+import UIContainer from '../src/components/UI_container';
 
 //Thinking in React Guide:
 //https://reactjs.org/docs/thinking-in-react.html
