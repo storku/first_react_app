@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import UIContainer from '../src/components/UI_container';
+import InputBox from '../src/components/Inputbox2';
+import { connect } from 'react-redux';
+import { submitArticle } from '../src/actions';
+import Layout from '../src/components/Layout';
+import ArticlesList from '../src/components/Articles_list';
 
 class Post extends Component {
   constructor(props) {
@@ -7,11 +12,16 @@ class Post extends Component {
   }
 
   render() {
+    const pageTitle = this.props.url.query.title;
+
     return (
-      <UIContainer>
-        <h1>{this.props.url.query.title}</h1>
-        <p>This is the blog post content.</p>
-      </UIContainer>
+      <Layout>
+        <UIContainer>
+          <h1>{pageTitle}</h1>
+          <InputBox title={pageTitle} />
+          <ArticlesList />
+        </UIContainer>
+      </Layout>
     );
   }
 }

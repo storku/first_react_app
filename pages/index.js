@@ -4,6 +4,7 @@ import { Link, Router } from '../routes';
 import InputBox from '../src/components/Inputbox';
 import ContainerExampleContainer from '../src/components/Text_container';
 import UIContainer from '../src/components/UI_container';
+import Layout from '../src/components/Layout';
 
 //Thinking in React Guide:
 //https://reactjs.org/docs/thinking-in-react.html
@@ -46,7 +47,7 @@ class App extends Component {
   //CSS is a stylesheet link placed in menu.js
   render() {
     return (
-      <div>
+      <Layout>
         <UIContainer>
           <Grid columns={2} divided>
             <Grid.Row>
@@ -66,7 +67,7 @@ class App extends Component {
             </Grid.Row>
           </Grid>
         </UIContainer>
-      </div>
+      </Layout>
     );
   }
 }

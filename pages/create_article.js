@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link, Router } from '../routes';
 import ArticleCreationInput from '../src/components/Article_creation_input';
 import UIContainer from '../src/components/UI_container';
+import Layout from '../src/components/Layout';
 
 //create test links
 const PostLink = props => (
@@ -52,7 +53,7 @@ class CreateArticle extends Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <UIContainer>
           <ArticleCreationInput
             value={this.state.value}
@@ -66,7 +67,7 @@ class CreateArticle extends Component {
           <PostLink id="bye_bye" title="Bye bye" />
           <PostLink id="test_abc" title="Test ABC" />
         </UIContainer>
-      </div>
+      </Layout>
     );
   }
 }
